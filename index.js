@@ -9,7 +9,6 @@ app.use(routes)
 app.set('views', 'views')
 app.set('view engine', 'ejs')
 
-
 app.listen(config.PORT, config.IP, () => {
     
     console.clear()
