@@ -7,19 +7,13 @@ routes.get('/', (req, res) => {
 
     res.render('inicial')
 
-    
-
 })
 
 routes.get('/api/placa=:placa', (req, res) => {
 
-    process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
-
     const { placa } = req.params
-
-    console.log(placa)
-
     const API = `${config.API}${placa}/${config.code}`
+    process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 
     axios.get(API).then(function (response) {
 
