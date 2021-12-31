@@ -1,0 +1,22 @@
+html,body {
+    font-family: 'Open Sans', serif;
+}
+.hero.is-info {
+    background-image: linear-gradient(120deg, #33ccff 0%, #ff99cc 100%);
+    background-color: transparent;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.hero.is-info .navbar-menu {
+    background-color: transparent;
+}
+.hero .nav, .hero.is-success .nav {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.hero .subtitle {
+    padding: 3rem 0;
+    line-height: 1.5;
+}
